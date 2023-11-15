@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/loginBG.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.mid{
+    border: 1px solid rgba(95, 94, 94, 0.639);           
+    
+    background-color: rgba(95, 94, 94, 0.639);
+    /* opacity: 60%; */
+    border-radius: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 5px; */
+    /* justify-content: space-around; */
+    gap: 20px;
+    font-size: larger;
+    height: 350px;
+    width: 350px;
+
+}
+
+input{
+    padding: 2px;
+    border-radius: .4em;
+    height: 1.5em;
+}
+
+.button{
+    width: 9em;
+    height: 2em;
+    border-radius: 15em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    color: black;
+    z-index: 1;
+}
+
+.button::before{
+    content: '';
+    width: 0;
+    height: 2em;
+    border-radius: 15em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0% , #f9f047 100%);
+    transition: .5s ease;
+    z-index: 1;
+}
+
+.button:hover::before{
+    width: 9em;
+    /* content: 'Login'; */
+}
+
+#signUp{
+    font-size: .8em;
+}
