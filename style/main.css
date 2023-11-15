@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    font-size: 80%;
+}
+
+main{
+    margin-top: 100px;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+.aremove{
+    text-decoration: none;
+    color: black;
+}
+
+.button{
+    background-color: #E80071;
+    border-radius: 5px;
+}
+
+.changeColor:hover{
+    color: rgba(24, 49, 211, 0.806);
+}
+
+.pointer:hover , .pointer{
+    cursor: pointer;
+}
+
+/* The part before header */
+#beforeHeader{
+    background-color: #003243;
+    color: white;
+    padding: 0 3em;
+}
+
+#inStart {
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftStart {
+    display: flex;
+    padding: .3em 0;
+}
+
+#giftCard{
+    padding: 0 1em;
+    border-right: .6px solid white;
+    color: white !important;
+    cursor: pointer;
+}
+
+#help{
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+/* Header Navigation Bar */
+.maincontainer{
+    display: flex;
+    padding: 2px 0;
+    /* background-color: aqua; */
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: .7px solid grey;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    /* background-color: red; */
+    padding: 10px;
+}
+
+.inBox{
+    font-weight: 600;
+}
+
+.logoss
+{
+    height: 40px;
+    width: 100px;
+    padding: 0;
+    object-fit: contain;
+}
+
+.dropdownBrandMenu{
+    display: none;
+    position: absolute;
+    left: 24em;
+    text-align: center;
+    /* width: fit-content; */
+    min-width: 10em;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropdownBrandMenu a{
+    display: block;
+}
+
+#dropdownBrands:hover .dropdownBrandMenu{
+    display: block;
+}
+
+.container2{
+    /* background-color: violet; */
+    display: flex;
+}
+
+.searchBox{
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    padding: 0 .4em;
+    height: 2.6em;
+    /* width: 20em; */
+    border: 0 solid black;
+    border-radius: 5px;
+}
+
+.searchBox input{
+    background-color: rgb(231, 231, 231);
+    border: 0 solid black;
+}
+
+.accountButton{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    padding: .5em 0;
+    font-size: 115%;
+}
+
+.cartBag{
+    border: 0;
+    background-color: transparent;
+    padding: .5em 0;
+    cursor: pointer;
+}
+
+/* After Nav Bar Offers Bar  */
+#offers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inOffer{
+    font-size: 85%;
+    opacity: 70%;
+    padding: 1em 1.2em;
+    cursor:pointer;
+    color: rgb(67, 67, 67);
+}
+
+.offerPhoto{
+    height: 100%;
+    width: 2em;
+}
+
+.photoHead{
+    overflow: hidden;
+}
+
+.photoHead img{
+    width: calc(100vw - 12px);
+    cursor: pointer;
+}
+
+
+/* The product card circle  */
+#productSlider{
+    overflow: hidden;
+    background-color: #B6F5F1;
+    padding: 2em 1em;
+}
+
+#productContainer{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.card{
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+    transition:all .5s ease-in-out;
+}
+
+.cardimg{
+    height: 25vh;
+}
+
+.cardtext{
+    background-color: #B6F5F1;
+    text-decoration: none;
+}
+
+.btn{
+    border: 2px solid grey;
+}
+
+#leftBtn{
+    display: none;
+}
+
+
+
+.slideshow{
+    height: 50vh;
+}
+
+
+/* Fresh Off the Brands  */
+#brands{
+    padding: 2em 4.5em;
+    background-color: #FBBCB2;
+}
+
+#freshimg{
+    width: calc(99vw - 9em);
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brandCard{
+    cursor: pointer;
+    width: calc((99vw - 9em)/6);
+    word-wrap: break-word;
+    margin: 1.5em 1.42em 0 1.42em;
+}
+
+.brandCardImg{
+    width: calc((99vw - 9em)/6);
+    border-radius: .5em;
+}
+.cardTextUp{
+    color: #013243;
+    font-weight: 600;
+}
+
+
+/* Footer part  */
+footer{
+    margin: 3em 0;
+}
+
+.firstfooterContainer{
+    padding: 5em;
+    background-color: #003243;
+    color: white;
+}
+
+.firstFooter{
+    display:grid;
+    grid-template-rows: 5vh 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+.logoFooter{
+    width: 5em;
+}
+
+.footerHead{
+    font-weight: 600;
+    font-size: 95%;
+}
+
+.textfooter{
+    color: white;
+    cursor: pointer;
+    font-size: 75%;
+    margin: .4em;
+}
+.textfooter:hover{
+    color: #57cbc3;
+}
+
+.categoriesFooterFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.secondFooter{
+    padding: 3em;
+    background-color: white;
+}
+
+.inSecondFooterFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondFooterLeft{
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    padding: 1.6em 0 2em 0;
+}
+
+.leftFooterinFlex{
+    width: 20em;
+    display: flex;
+}
+
+.leftFooterTexts{
+    padding: 0 0 0 2em;
+}
+
+.leftFooterTextUp{
+    font-size: 90%;
+    border-bottom: .3px solid grey;
+    width:fit-content;
+}
+
+.leftFooterTextDown{
+    margin: .8em 0 0 0;
+    font-size: 70%;
+    opacity: 70%;
+}
+
+.rightfooterText{
+    font-size: 80%;
+}
+
+.socialMedia{
+    margin: .3em 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia img{
+    margin: 0 .2em;
+    cursor: pointer;
+}
+
+
+
+.thirdFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003243;
+    color: white;
+    padding: 1em 0;
+}
+
+.lastFooterUp{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4 , 1fr);
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+.lastFooterDown{
+    padding: .5em 0 0 0;
+    text-align: center;
+}
+
+
+
+/* Removed part  */
+/* May need to change  */
+.topBrands{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh;
+}
+.items{
+    margin: 5vh;
+    border-radius: .5em;
+    border: .2px solid grey;
+    width: 25vw;
+}
+.itemImg{
+    border-radius: .5em .5em 0 0;
+    height: 100%;
+    width: 25vw;
+}
+.afterImage{
+    padding: .5em;
+}
+.afterImage .offer{
+    color: #E80071;
+}
+.afterImage{
+    word-wrap: break-word;
+}
