@@ -19,7 +19,7 @@ a{
     /* width: 100vw; */
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 10%;
     padding: 1em;
     /* display: none; */
 }
