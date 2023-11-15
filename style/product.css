@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.centerFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: rgb(234, 234, 234);
+    width: 100vw - 12px;
+    padding: 0 3em 3em 3em;
+}
+
+.productroute{
+    padding: 1em 0.2em;
+    font-size: 80%;
+    color: grey;
+}
+
+.productMainContainer{
+    background-color: white;
+    color: black;
+    display: flex;
+    margin-bottom: 1.3em;
+}
+
+.productimg{
+    width: 40%;
+    border-right: .4px solid rgb(187, 187, 187);
+}
+
+.productimg img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.productInfo{
+    padding: 1.5em;
+    font-size: 1.4em;
+    width: 60%;
+}
+
+.productNames{
+    font-size: 90%;
+    color: black;
+    font-weight: 600;
+}
+
+.size{
+    margin-top: .4em;
+    font-size: 80%;
+}
+
+.price{
+    font-size: 90%;
+    display: flex;
+    justify-content: start;
+    /* align-items: center; */
+    margin: .4em 0;
+    color: black;
+}
+
+.rating{
+    display: flex;
+    margin: .3em 0 0 0;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+.numRating{
+    margin: .3em 0 0 .7em;
+    font-size: 80%;
+}
+
+.mrp{
+    opacity: 70%;
+    font-size: 80%;
+    display: flex;
+}
+
+.cutprice{
+    font-size: 90%;
+    text-decoration: line-through;
+}
+
+.amount{
+    font-weight: 600;
+    margin: 0 .4em;
+}
+
+.discount{
+    font-size: 90%;
+    color: green;
+}
+
+.taxes{
+    font-size: 75%;
+    color: grey;
+}
+
+.sizeChart{
+    margin-top: 5em;
+}
+
+.sizeChart button{
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(157, 157, 157);
+    height: 3em;
+    width: 5em;
+    cursor: pointer;
+}
+
+.delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7em;
+    margin-top: 1em;
+}
+
+.addToBag{
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2em;
+    border-right: 1px solid grey;
+}
+
+.addToBag button{
+    border: none;
+    background-color: #003243;
+    color: white;
+    font-weight: 600;
+    height: 4em;
+    width: 16em
+    /* width: 30%; */
+}
+
+.deliveryOptions{
+    font-size: 70%;
+    height: 100%;
+    margin-left: 1em;
+    padding-left: 2em;
+}
+
+.pincode *{
+    border: none;
+    outline: none;
+    background-color: white;
+    margin: .4em;
+    padding: .1em;
+    font-size: 100%;
+}
+
+.pincode button{
+    font-weight: 600;
+    padding-right: .3em;
+}
+
+.pincode{
+    border: 1px solid grey;
+    margin-top: 1em;
+    height: 2.5em;
+    display: flex;
+    /* font-size: 120%; */
+}
+
+.aboutProduct{
+    margin: 1.3em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productDescription{
+    background-color: white;
+    margin-bottom: 1.3em;
+    padding: 1.5em;
+    opacity: 80%;
+}
+
+.productCard{
+    padding: 2em;
+    margin-left: 2em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.productCard img{
+    border: none;
+    width: 100%;
+}
+
+.changeSize{
+    font-size: 120%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.addToBagChange button{
+    margin-top: 3em;
+    border: none;
+    background-color: #003243;
+    color: white;
+    font-weight: 600;
+    height: 4em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.productDetails{
+    padding: 1em;
+    margin-top: 1.3em;
+    background-color: white;
+}
+
+.ratingReview{
+    border-bottom: .1px solid grey;
+}
+
+.ratingReview div{
+    padding-bottom: 1em;
+    width: fit-content;
+    color: #003243;
+    font-weight: 600;
+    border-bottom: .15em solid #003243;
+}
+
+.ratingDiv{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+}
+
+.viewRating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid black;
+}
+ 
+.curRating{
+    font-size: 2em;
+    margin: 0 .5em;
+}
+
+.review{
+    padding-left: 2em;
+    width: 70%;
+}
+
+.review .text{
+    opacity: 80%;
+}
+
+.writeReview button{
+    margin: 1em;
+    border: .1px solid rgb(197, 197, 197);
+    outline: none;
+    background-color: white;
+    color: #003243;
+    font-size: 1em;
+    cursor: pointer;
+    height: 3em;
+    width: 9em;
+}
