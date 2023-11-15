@@ -33,7 +33,7 @@ input{
 
 .button{
     background-color: #E80071;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .changeColor:hover{
