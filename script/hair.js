@@ -12,7 +12,7 @@ const pName = [
     "L'oréal Professionnel Absolut Repair Shampoo For Dry And.."
 ]
 
-const mrp = [2000 , 860 , 299 , 3870 , 745 , 450, 419 , 1597 , 1199 , 745]
+const mrp = [2200 , 860 , 299 , 3870 , 745 , 450, 419 , 1597 , 1199 , 745]
 
 const price = [2000 , 430 , 284 , 3870 , 745 , 369 , 377 , 878 , 683 , 645]
 
@@ -61,9 +61,9 @@ for(let i = 0;i< 10;i++){
     </div></a>';
 }
 
-for(let i = 0 ;i< 6;i++){
+for(let i = 0 ;i < 6;i++){
     document.getElementById('hairSlideshow').innerHTML += 
     '<div class="carousel-item">\
-        <img src="../images/slideshow/h' + (i+2) + '.avif" class="d-block w-100 slider" alt="..." />\
+        <img src="../images/slideshow/h' + (j+2) + '.avif" class="d-block w-100 slider" alt="..." />\
     </div>';
 }
