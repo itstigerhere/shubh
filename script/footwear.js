@@ -41,7 +41,7 @@ for(let i = 0;i< 10;i++){
         best = '';
     }
 
-    if (i < 3){
+    if (i > 3){
         flink = '../footwear/' + (i+1) + '.html';
     } else {
         flink = '#';
