@@ -12,7 +12,7 @@ const footName = [
     'Campus Dapper Off White Running Shoes'
 ]
 
-const mrp = [4499 , 4299 , 1499 , 4990 , 9990 , 4499 , 4999, 5995 , 5299 , 1499]
+const mrp = [4399 , 4299 , 1499 , 4990 , 9990 , 4499 , 4999, 5995 , 5299 , 1499]
 
 const price = [2249 , 4299 , 929 , 4491 , 9990  , 2249 , 2499 , 1499 , 2491 , 999]
 
@@ -41,7 +41,7 @@ for(let i = 0;i< 10;i++){
         best = '';
     }
 
-    if (i < 3){
+    if (i > 3){
         flink = '../footwear/' + (i+1) + '.html';
     } else {
         flink = '#';
